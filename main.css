@@ -1,0 +1,253 @@
+
+* {
+    box-sizing: border-box;
+    
+  }
+
+ #ah {
+    position: relative;
+    border:1px solid black; 
+    background-image: linear-gradient(to bottom right, rgb(197, 187, 255), rgb(176, 174, 243));
+    height: 1000px;
+ }
+
+
+  .hanafy {
+    margin: 130px;
+    border: 1px solid lightgrey;
+    transform: translate(0,-980px);
+    background-color: white; 
+    position: absolute;
+    bottom: 500;
+
+  }
+
+.column {
+    float: left;
+    padding-right: 8px;
+    padding-left: 8px;
+    height:100%; 
+    
+}
+.column.start{
+    width: 30%;
+    background-color:   rgb(247, 247, 234) ; 
+    border-right: 1px solid lightgrey;  
+}
+
+.column.last{
+   width: 20%;
+   height: 750px; 
+   padding-left: 67px;
+   border-left: 1px solid lightgrey; 
+
+   
+}
+.column.middle {
+  width: 50%;;
+    height: 100%; 
+   
+  }
+.row:after {
+    content: "";
+    display: table;
+    clear: both;    
+}
+.flex-container {
+    display: flex;     
+    flex-wrap: nowrap;
+     max-width: 100%; 
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-bottom: .5px solid lightgrey;
+   
+}
+.icons1 {
+    margin:10px;
+    padding: 10px; 
+    opacity: .5;
+    font-size:36px;color:rgb(11, 70, 138);
+    cursor: pointer;
+}
+.ino1{
+    margin:10px;
+    padding: 10px; 
+    opacity: .5;
+    font-size:36px;color:rgb(11, 70, 138);
+    cursor: pointer;
+}
+ .icons1:hover {
+   
+    opacity: 1;
+    border-bottom:  1px solid lightgrey; 
+
+}
+
+P { 
+    font-size:10px;
+}
+.search {
+    width: 100%;
+    position: relative;
+    display: flex;
+  }
+
+  .searchTerm {
+  width: 100%;
+  border: 3px solid rgb(245, 245, 245);
+  border-right: none;
+  padding: 10px;
+  height: 40px;
+  border-radius:20px; 
+  outline: none;
+  }
+  .searchbutton {
+     height: 40px; 
+     border: 3px solid whitesmoke;
+     border-left: none;      
+     background-color: white; 
+     border-radius: 20px;
+     cursor: pointer;
+  }
+  .flex-container2 {
+    display: flex;  
+    flex-direction: column;
+    flex-wrap: nowrap;   
+    max-width: 100%; 
+    justify-content: center;
+    align-items: flex-start;
+    justify-content: space-between;
+        
+  }
+  h5 {
+    float: right;
+    padding-left: 20px;
+    margin-top:-58px;
+    font-size: 18px; 
+    position : relative ;
+  }
+  span { 
+     font-size :15px;  
+     font-weight: lighter;  
+  }
+ #min {
+     background-color: white; 
+     font-size: 16px; 
+     border :  1px solid lightgrey; 
+     border-radius: 20px;
+
+ }
+ #icons2 {
+     float:right;
+     margin:0px;
+    padding: 6px; 
+    font-size: 19px; 
+    color:rgb(11, 70, 138);
+    cursor: pointer;
+}
+ .part-1 {
+     border-bottom : 1px solid lightgrey ;
+
+     height:40px;
+     vertical-align: center; 
+ }
+
+ .msg {
+  float: right; 
+  margin-top: -76px; 
+  font-size:20px;
+  background-color: whitesmoke;; 
+  width: 300px;
+  height: 50px;
+  padding-left : 10px;
+  padding-top : 10px; 
+  border-radius: 20px; 
+  margin-right: 277px;
+  
+ }
+ .second-part {
+    margin-top: 116px;   
+ }
+ .msg2 {
+    float: right; 
+    margin-top: -90px; 
+    font-size:20px;
+    background-color: whitesmoke;; 
+    width: 300px;
+    height: 98px;
+    padding-left : 10px;
+    padding-top : 10px; 
+    border-radius: 20px; 
+    margin-right: 272px;   
+  
+
+ }
+ .third-part {
+    margin-top: 111px; 
+    
+     
+    }
+.msg3 {
+    float: right; 
+    margin-top: -59px; 
+    font-size:20px;
+    background-color: lightblue; 
+    width: 300px;
+    height: 98px;
+    padding-left : 10px;
+    padding-top : 10px; 
+    border-radius: 20px; 
+
+
+
+}
+.text-1 {
+    margin: -7px;
+
+}
+.text-3 {
+    margin-right: 75px;
+    margin-top: 1px;
+}
+.l1 {
+
+  margin: auto; 
+  margin-bottom: 1000px;
+  margin-top: 46px;
+
+}
+
+
+.imgg:hover {
+     box-shadow: 0 4px 8px 0 gray, 0 6px 20px 0 grey;
+     cursor: pointer; 
+}
+#icons3 {
+    font-size: 30px; 
+    margin-left: 30px; 
+    margin-bottom: 20px; 
+    cursor: pointer;
+
+
+}
+#reply {
+    width: 642PX;
+    border: .5px solid lightgrey;
+    border-right: none; 
+    border-left: none; 
+    padding: 5px;
+    height: 50px;
+    margin-top: 250px;
+    outline: none;
+   
+    display: block;
+
+}
+@media screen and (max-width:600px) {
+    .column.start   {
+      width: 100%;
+    }
+    .column.middle , .column.last {
+        display: none; 
+    }
+}
