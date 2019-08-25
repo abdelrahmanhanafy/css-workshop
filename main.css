@@ -2,24 +2,24 @@
 * {
     box-sizing: border-box;
     
+  } 
+  body {
+    background-image: linear-gradient(to right, rgb(215, 213, 247),  rgb(134, 191, 255) );
+
   }
 
- #ah {
-    position: relative;
-    border:1px solid black; 
-    background-image: linear-gradient(to bottom right, rgb(197, 187, 255), rgb(176, 174, 243));
-    height: 1000px;
- }
+ 
 
-
-  .hanafy {
-    margin: 130px;
+  #chat-body  {
+    margin: 146px;
     border: 1px solid lightgrey;
-    transform: translate(0,-980px);
+    border-radius:15px;  
     background-color: white; 
-    position: absolute;
-    bottom: 500;
+    position: relative;
+    box-shadow: 10px 7px 60px black;
+   
 
+   
   }
 
 .column {
@@ -32,12 +32,14 @@
 .column.start{
     width: 30%;
     background-color:   rgb(247, 247, 234) ; 
-    border-right: 1px solid lightgrey;  
+    border-right: 1px solid lightgrey; 
+    height: 805px;
+    border-radius: 15px;  
 }
 
 .column.last{
    width: 20%;
-   height: 750px; 
+   height: 808px; 
    padding-left: 67px;
    border-left: 1px solid lightgrey; 
 
@@ -57,7 +59,7 @@
     display: flex;     
     flex-wrap: nowrap;
      max-width: 100%; 
-    justify-content: flex-start;
+    justify-content: center;
     align-items: flex-start;
     border-bottom: .5px solid lightgrey;
    
@@ -69,17 +71,21 @@
     font-size:36px;color:rgb(11, 70, 138);
     cursor: pointer;
 }
-.ino1{
+.icon-num-1{
     margin:10px;
     padding: 10px; 
-    opacity: .5;
+    opacity: 1;
     font-size:36px;color:rgb(11, 70, 138);
     cursor: pointer;
 }
+.wrap {
+    margin-bottom:30px;
+     margin-top:15px
+}
  .icons1:hover {
-   
+    transition-delay: .2s; 
     opacity: 1;
-    border-bottom:  1px solid lightgrey; 
+    border-bottom:  8px solid rgb(11, 70, 138); 
 
 }
 
@@ -96,18 +102,19 @@ P {
   width: 100%;
   border: 3px solid rgb(245, 245, 245);
   border-right: none;
-  padding: 10px;
+  padding: 23px;
   height: 40px;
   border-radius:20px; 
   outline: none;
+  font-size: 17px;
   }
-  .searchbutton {
-     height: 40px; 
-     border: 3px solid whitesmoke;
-     border-left: none;      
-     background-color: white; 
-     border-radius: 20px;
-     cursor: pointer;
+
+  
+  .search-icon {
+    font-size: 20px; 
+    transform: translate(-33px, 15px);
+    color: cornflowerblue;
+    cursor: pointer; 
   }
   .flex-container2 {
     display: flex;  
@@ -117,26 +124,58 @@ P {
     justify-content: center;
     align-items: flex-start;
     justify-content: space-between;
+    border-bottom: 1px solid lightgrey;
+     margin-bottom:30px; 
+    width: 100%;
         
   }
+  .img-left {
+
+    border-radius:50%;
+  }
+
   h5 {
     float: right;
     padding-left: 20px;
     margin-top:-58px;
     font-size: 18px; 
     position : relative ;
+    margin-left: 10px;
+  }
+  .text-1 {
+       transform: translate(-15px, 14px);}
+
+  .text-2 {
+    padding-left: 67px;
   }
   span { 
      font-size :15px;  
      font-weight: lighter;  
   }
- #min {
+ #twelve-min {
      background-color: white; 
      font-size: 16px; 
      border :  1px solid lightgrey; 
      border-radius: 20px;
 
  }
+ .bor-msg {
+    border-bottom: 1px solid lightgrey; margin-bottom:30px;
+     width: 100%; 
+     height: 78px;
+ }
+ .bor-msg-2 {
+    border-bottom: 1px solid lightgrey;
+    margin-bottom: 30px; 
+    margin-left: -2px;
+ }
+
+ .part-1 {
+    border-bottom : 1px solid lightgrey ;
+
+    height:40px;
+    vertical-align: center; 
+}
  #icons2 {
      float:right;
      margin:0px;
@@ -145,12 +184,13 @@ P {
     color:rgb(11, 70, 138);
     cursor: pointer;
 }
- .part-1 {
-     border-bottom : 1px solid lightgrey ;
-
-     height:40px;
-     vertical-align: center; 
- }
+.sender-name {
+    font-size: 24px;
+    font-weight: bold;
+     color: rgb(11, 70, 138); 
+    text-decoration-line: underline;
+     cursor: pointer;
+}
 
  .msg {
   float: right; 
@@ -163,6 +203,7 @@ P {
   padding-top : 10px; 
   border-radius: 20px; 
   margin-right: 277px;
+  transform: translate(-36px, 66px);
   
  }
  .second-part {
@@ -179,14 +220,18 @@ P {
     padding-top : 10px; 
     border-radius: 20px; 
     margin-right: 272px;   
+    transform: translate(-40px, 33px);
   
 
  }
  .third-part {
     margin-top: 111px; 
-    
-     
-    }
+ }   
+.img-right {
+    border-radius:50%;
+    float:right;
+}     
+ 
 .msg3 {
     float: right; 
     margin-top: -59px; 
@@ -209,16 +254,19 @@ P {
     margin-right: 75px;
     margin-top: 1px;
 }
-.l1 {
+.last-part {
 
   margin: auto; 
   margin-bottom: 1000px;
   margin-top: 46px;
 
 }
+.img-last {
+    border-radius:50%; margin-left: 22px;
+}
 
 
-.imgg:hover {
+.img-last:hover {
      box-shadow: 0 4px 8px 0 gray, 0 6px 20px 0 grey;
      cursor: pointer; 
 }
@@ -227,11 +275,29 @@ P {
     margin-left: 30px; 
     margin-bottom: 20px; 
     cursor: pointer;
-
+    transform: translate(-30px, 15px);
 
 }
+.icon-facebook {
+    color:rgb(11, 70, 138);
+    border-radius:50px;
+    padding: 13px;
+}
+.icon-twitter {
+    color:rgb(72, 157, 255);
+    border-radius:50%;
+ 
+}
+.icon-google {
+    color:rgb(155, 13, 13);
+    border-radius:50%;
+    padding: 11px;
+}
+
+
 #reply {
-    width: 642PX;
+    width: 650PX;
+
     border: .5px solid lightgrey;
     border-right: none; 
     border-left: none; 
@@ -240,8 +306,27 @@ P {
     margin-top: 250px;
     outline: none;
    
-    display: block;
+    display: block; }
+    .button {
+        background-color: rgb(11, 70, 138);
+        border: none;
+        color: white;
+        padding: 11px 26px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 18px;
+        margin: 27px 20px; 
+        cursor: pointer;
+        float: right; 
+        border-radius: 10px;
+      }
 
+
+.TEXT-FINAL {
+    font-size: 15px;
+        transform: translate(-5px, 5px);
+        color: gray;
 }
 @media screen and (max-width:600px) {
     .column.start   {
